@@ -15,6 +15,11 @@ import mdLogo from "@/assets/md-logo.jpg.asset.json";
 import { supabase } from "@/integrations/supabase/client";
 import { pickImageUrl, categoryFallbackImage } from "@/lib/menu-images";
 
+const logoUrl =
+  (mdLogo as any)?.url ||
+  (mdLogo as any)?.default?.url ||
+  "/src/assets/images/md_logo_1791134715732.jpg";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -245,16 +250,22 @@ function Index() {
         setActive((prev) => (next.some((s) => s.id === prev) ? prev : next[0].id));
       }
     };
-    load();
-    const ch = supabase
-      .channel("menu-live")
-      .on("postgres_changes", { event: "*", schema: "public", table: "menu_items" }, load)
-      .on("postgres_changes", { event: "*", schema: "public", table: "menu_categories" }, load)
-      .subscribe();
-    return () => {
-      cancelled = true;
-      supabase.removeChannel(ch);
-    };
+    try {
+      load();
+      const ch = supabase
+        .channel("menu-live")
+        .on("postgres_changes", { event: "*", schema: "public", table: "menu_items" }, load)
+        .on("postgres_changes", { event: "*", schema: "public", table: "menu_categories" }, load)
+        .subscribe();
+      return () => {
+        cancelled = true;
+        try {
+          supabase.removeChannel(ch);
+        } catch {}
+      };
+    } catch (e) {
+      console.warn("Supabase channel error", e);
+    }
   }, []);
 
   const pickLang = (l: Lang) => {
@@ -367,7 +378,7 @@ function Index() {
               }}
             >
               <img
-                src={mdLogo.url}
+                src={logoUrl}
                 alt="MD Restorant & Cafe"
                 style={{
                   display: "block",
@@ -754,7 +765,7 @@ function Index() {
                 }}
               >
                 <img
-                  src={mdLogo.url}
+                  src={logoUrl}
                   alt="MD Restorant & Cafe"
                   style={{
                     display: "block",
