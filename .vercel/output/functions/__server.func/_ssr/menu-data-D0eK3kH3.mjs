@@ -1,0 +1,1429 @@
+//#region node_modules/.nitro/vite/services/ssr/assets/menu-data-D0eK3kH3.js
+var FALLBACK_SECTIONS = [
+	{
+		id: "burgers",
+		ar: "البرغر",
+		en: "Burgers",
+		ku: "بەرگەر",
+		emoji: "🍔",
+		items: [
+			{
+				id: "bg1",
+				ar: "برغر كلاسيك لحم",
+				en: "Classic Beef Burger",
+				ku: "بەرگەری کلاسیک گۆشت",
+				price: 4.5,
+				descAr: "قطعة لحم بقري طازجة مشوية مع الخس والطماطم والمخلل في خبز برغر طري.",
+				descEn: "Fresh grilled beef patty with lettuce, tomato and pickles in a soft bun.",
+				descKu: "پارچە گۆشتێکی مانگای تازەی برژاو لەگەڵ کاهو، تەماتە و ترشیات لەناو نانی بەرگەری نەرمدا."
+			},
+			{
+				id: "bg2",
+				ar: "برغر كلاسيك دجاج",
+				en: "Classic Chicken Burger",
+				ku: "بەرگەری کلاسیک مریشک",
+				price: 4,
+				descAr: "صدر دجاج مشوي مع صلصة المنزل والخضار الطازجة.",
+				descEn: "Grilled chicken breast with house sauce and crisp vegetables.",
+				descKu: "سنگی مریشکی برژاو لەگەڵ سۆسی تایبەت و سەوزەی تازە."
+			},
+			{
+				id: "bg3",
+				ar: "برغر لحم بالجبن",
+				en: "Beef Cheese Burger",
+				ku: "بەرگەری گۆشت بە پەنیر",
+				price: 5,
+				descAr: "لحم بقري مع جبن شيدر ذائب وصلصة سرية.",
+				descEn: "Beef patty topped with melted cheddar and secret sauce.",
+				descKu: "گۆشتی مانگا لەگەڵ پەنیر شیدەری تواوە و سۆسی نهێنی."
+			},
+			{
+				id: "bg4",
+				ar: "برغر دجاج بالجبن",
+				en: "Chicken Cheese Burger",
+				ku: "بەرگەری مریشک بە پەنیر",
+				price: 4.5,
+				descAr: "صدر دجاج مشوي مقرمش مغطى بجبن الشيدر الذائب.",
+				descEn: "Crispy grilled chicken topped with melted cheddar cheese.",
+				descKu: "سنگی مریشکی برژاوی مقرمش لەگەڵ پەنیری شیدەری تواوە."
+			},
+			{
+				id: "bg5",
+				ar: "برغر لحم بالفطر",
+				en: "Beef Mushroom Burger",
+				ku: "بەرگەری گۆشت بە قارچک",
+				price: 5,
+				descAr: "لحم مشوي مع فطر سوتيه بالزبدة وجبن سويسري.",
+				descEn: "Grilled beef with sautéed mushrooms and Swiss cheese.",
+				descKu: "گۆشتی برژاو لەگەڵ قارچکی سوورەکراو بە کەرە و پەنیری سویسری."
+			},
+			{
+				id: "bg6",
+				ar: "برغر دجاج بالفطر",
+				en: "Chicken Mushroom Burger",
+				ku: "بەرگەری مریشک بە قارچک",
+				price: 4.5,
+				descAr: "صدر دجاج مشوي مع فطر سوتيه وجبن موزاريلا ذائب.",
+				descEn: "Grilled chicken breast with sautéed mushrooms and melted mozzarella.",
+				descKu: "سنگی مریشکی برژاو لەگەڵ قارچکی سوورەکراو و پەنیری مۆزاریلای تواوە."
+			},
+			{
+				id: "bg7",
+				ar: "جامبو برغر لحم",
+				en: "Jumbo Beef Burger",
+				ku: "جامبۆ بەرگەری گۆشت",
+				price: 9,
+				descAr: "قطعتان من لحم البقري مع جبن مزدوج ولحم مقدد.",
+				descEn: "Double beef patty with double cheese and bacon strips.",
+				descKu: "دوو پارچە گۆشتی مانگا لەگەڵ پەنیری دۆبڵ و پارچە بەیکۆن.",
+				tags: ["MD"]
+			},
+			{
+				id: "bg8",
+				ar: "جامبو برغر دجاج",
+				en: "Jumbo Chicken Burger",
+				ku: "جامبۆ بەرگەری مریشک",
+				price: 8,
+				descAr: "قطعتان من صدر الدجاج مع الجبن والخس والصلصة الخاصة.",
+				descEn: "Double chicken breast with cheese, lettuce and special sauce.",
+				descKu: "دوو پارچە سنگی مریشک لەگەڵ پەنیر، کاهو و سۆسی تایبەت."
+			},
+			{
+				id: "bg9",
+				ar: "جيلي برغر لحم",
+				en: "Jelly Beef Burger",
+				ku: "جێلی بەرگەری گۆشت",
+				price: 5,
+				descAr: "برغر لحم مع صلصة الجيلي الحلوة والحارة والجبن.",
+				descEn: "Beef burger with sweet and spicy jelly sauce and cheese.",
+				descKu: "بەرگەری گۆشت لەگەڵ سۆسی جێلی شیرین و تیژ و پەنیر."
+			},
+			{
+				id: "bg10",
+				ar: "جيلي برغر دجاج",
+				en: "Jelly Chicken Burger",
+				ku: "جێلی بەرگەری مریشک",
+				price: 4.5,
+				descAr: "برغر دجاج مع صلصة الجيلي والجبن.",
+				descEn: "Chicken burger with jelly sauce and cheese.",
+				descKu: "بەرگەری مریشک لەگەڵ سۆسی جێلی و پەنیر."
+			},
+			{
+				id: "bg11",
+				ar: "زنجر حار",
+				en: "Spicy Zinger",
+				ku: "زینگەری تیژ",
+				price: 4.5,
+				descAr: "صدر دجاج مقرمش حار مع الخس والمايونيز.",
+				descEn: "Crispy spicy chicken breast with lettuce and mayo.",
+				descKu: "سنگی مریشکی مقرمشی تیژ لەگەڵ کاهو و مایۆنیز.",
+				tags: ["حار", "Spicy"]
+			},
+			{
+				id: "bg12",
+				ar: "زنجر بارد",
+				en: "Cool Zinger",
+				ku: "زینگەری سارد",
+				price: 4.5,
+				descAr: "صدر دجاج مقرمش غير حار مع الخس والمايونيز.",
+				descEn: "Crispy non-spicy chicken breast with lettuce and mayo.",
+				descKu: "سنگی مریشکی مقرمشی ئاسایی (سارد) لەگەڵ کاهو و مایۆنیز."
+			}
+		]
+	},
+	{
+		id: "pizza",
+		ar: "البيتزا",
+		en: "Pizza",
+		ku: "پیتزا",
+		emoji: "🍕",
+		items: [
+			{
+				id: "pz1",
+				ar: "بيتزا دجاج",
+				en: "Chicken Pizza",
+				ku: "پیتزای مریشک",
+				price: 7,
+				descAr: "صلصة طماطم منزلية، موزاريلا، قطع دجاج متبلة وزيتون أسود.",
+				descEn: "House tomato sauce, mozzarella, marinated chicken and black olives.",
+				descKu: "سۆسی تەماتەی ماڵی، پەنیری مۆزاریلا، پارچە مریشکی بەهاراتکراو و زەیتوونی ڕەش."
+			},
+			{
+				id: "pz2",
+				ar: "بيتزا لحم",
+				en: "Beef Pizza",
+				ku: "پیتزای گۆشت",
+				price: 8,
+				descAr: "لحم بقري مفروم، فلفل، بصل وجبن موزاريلا ذائب.",
+				descEn: "Minced beef, peppers, onion and melted mozzarella.",
+				descKu: "گۆشتی قیمەکراو، بیبەر، پیاز و پەنیری مۆزاریلای تواوە."
+			},
+			{
+				id: "pz3",
+				ar: "بيتزا مارغريتا",
+				en: "Margherita",
+				ku: "پیتزای مارگریتا",
+				price: 6,
+				descAr: "طماطم سان مارزانو، موزاريلا طازجة وريحان.",
+				descEn: "San Marzano tomato, fresh mozzarella and basil.",
+				descKu: "تەماتەی سان مارزانۆ، پەنیری مۆزاریلای تازە و ڕیحانە."
+			},
+			{
+				id: "pz4",
+				ar: "بيتزا الفريدو دجاج",
+				en: "Chicken Alfredo Pizza",
+				ku: "پیتزای ئەلفرێدۆی مریشک",
+				price: 7,
+				descAr: "صلصة الفريدو الكريمية، دجاج مشوي وفطر.",
+				descEn: "Creamy Alfredo sauce, grilled chicken and mushrooms.",
+				descKu: "سۆسی ئەلفرێدۆی کرێمی، مریشکی برژاو و قارچک."
+			},
+			{
+				id: "pz5",
+				ar: "بيتزا مكسيكانو لحم",
+				en: "Mexicano Beef Pizza",
+				ku: "پیتزای مەکسیکانۆی گۆشت",
+				price: 8,
+				tags: ["حار", "Spicy"]
+			},
+			{
+				id: "pz6",
+				ar: "بيتزا بيبروني",
+				en: "Pepperoni",
+				ku: "پیتزای پێپڕۆنی",
+				price: 7
+			},
+			{
+				id: "pz7",
+				ar: "بيتزا خضار سوتيه",
+				en: "Sautéed Vegetable Pizza",
+				ku: "پیتزای سەوزەی سۆتێ",
+				price: 7,
+				tags: ["نباتي", "Veg"]
+			},
+			{
+				id: "pz8",
+				ar: "بيتزا دجاج كاري",
+				en: "Chicken Curry Pizza",
+				ku: "پیتزای مریشکی کاری",
+				price: 7
+			}
+		]
+	},
+	{
+		id: "sandwiches",
+		ar: "السندويش",
+		en: "Sandwiches",
+		ku: "ساندویچ",
+		emoji: "🥪",
+		items: [
+			{
+				id: "sw1",
+				ar: "ساندويش فاهيتا دجاج",
+				en: "Chicken Fajita Sandwich",
+				ku: "ساندویچی فاهیتای مریشک",
+				price: 5,
+				descAr: "دجاج فاهيتا متبل مع فلفل ملون وبصل في خبز محمص.",
+				descEn: "Spiced fajita chicken with bell peppers and onions in toasted bread.",
+				descKu: "مریشکی فاهیتای متبلکراو لەگەڵ بیبەری ڕەنگاوڕەنگ و پیاز لەناو نانی برژاودا."
+			},
+			{
+				id: "sw2",
+				ar: "ساندويش فاهيتا لحم",
+				en: "Beef Fajita Sandwich",
+				ku: "ساندویچی فاهیتای گۆشت",
+				price: 6
+			},
+			{
+				id: "sw3",
+				ar: "ساندويش فيلادلفيا لحم",
+				en: "Philadelphia Beef",
+				ku: "ساندویچی فیلادێلفیای گۆشت",
+				price: 6,
+				descAr: "شرائح لحم رقيقة مع جبن فيلادلفيا ذائب وفلفل.",
+				descEn: "Thin sliced beef with melted Philadelphia cheese and peppers.",
+				descKu: "پارچە گۆشتی تەنک لەگەڵ پەنیری فیلادێلفیای تواوە و بیبەر."
+			},
+			{
+				id: "sw4",
+				ar: "ساندويش مكسيكانو لحم",
+				en: "Mexicano Beef",
+				ku: "ساندویچی مەکسیکانۆی گۆشت",
+				price: 6,
+				tags: ["حار"]
+			},
+			{
+				id: "sw5",
+				ar: "ساندويش مكسيكانو دجاج",
+				en: "Mexicano Chicken",
+				ku: "ساندویچی مەکسیکانۆی مریشک",
+				price: 5,
+				tags: ["حار"]
+			},
+			{
+				id: "sw6",
+				ar: "ساندويش ستروغانوف لحم",
+				en: "Beef Stroganoff",
+				ku: "ساندویچی ستڕۆگانۆفی گۆشت",
+				price: 6
+			},
+			{
+				id: "sw7",
+				ar: "ساندويش ستروغانوف دجاج",
+				en: "Chicken Stroganoff",
+				ku: "ساندویچی ستڕۆگانۆفی مریشک",
+				price: 5
+			},
+			{
+				id: "sw8",
+				ar: "ساندويش دجاج فيليه",
+				en: "Chicken Fillet",
+				ku: "ساندویچی فیلێی مریشک",
+				price: 5
+			}
+		]
+	},
+	{
+		id: "western",
+		ar: "الأطباق الغربية",
+		en: "Western Dishes",
+		ku: "خواردنی ڕۆژئاوایی",
+		emoji: "🍽️",
+		items: [
+			{
+				id: "wd1",
+				ar: "طبق ستيك لحم بالفطر",
+				en: "Beef Steak with Mushroom",
+				ku: "ستێکی گۆشت بە قارچک",
+				price: 14,
+				descAr: "ستيك لحم بقري مع صلصة الفطر الكريمية، بطاطس وخضار مشكلة.",
+				descEn: "Beef steak with creamy mushroom sauce, potatoes and mixed vegetables.",
+				descKu: "ستێکی گۆشتی مانگا لەگەڵ سۆسی قارچکی کرێمی، پەتاتە و سەوزەی تێکەڵ."
+			},
+			{
+				id: "wd2",
+				ar: "طبق ستيك لحم باربكيو",
+				en: "BBQ Beef Steak",
+				ku: "ستێکی گۆشتی بەربێکیو",
+				price: 14
+			},
+			{
+				id: "wd3",
+				ar: "طبق ستيك دجاج بالفطر",
+				en: "Chicken Steak with Mushroom",
+				ku: "ستێکی مریشک بە قارچک",
+				price: 12
+			},
+			{
+				id: "wd4",
+				ar: "طبق ستيك دجاج بكاتشيا",
+				en: "Chicken Piccata",
+				ku: "ستێکی مریشک پیکاتا",
+				price: 12
+			},
+			{
+				id: "wd5",
+				ar: "طبق ستيك دجاج مشوي",
+				en: "Grilled Chicken Steak",
+				ku: "ستێکی مریشکی برژاو",
+				price: 12
+			},
+			{
+				id: "wd6",
+				ar: "طبق كوردن بلو",
+				en: "Cordon Bleu",
+				ku: "کۆردۆن بلو",
+				price: 14,
+				descAr: "دجاج محشي بالجبن واللحم المقدد، مقلي بالبقسماط الذهبي.",
+				descEn: "Chicken stuffed with cheese and ham, fried in golden breadcrumbs.",
+				descKu: "مریشکی پڕکراو بە پەنیر و بەیکۆن، سوورەکراو لەناو نانی وردکراوی زێڕیندا."
+			},
+			{
+				id: "wd7",
+				ar: "طبق جكن رول",
+				en: "Chicken Roll",
+				ku: "چیکن ڕۆڵ",
+				price: 14
+			},
+			{
+				id: "wd8",
+				ar: "طبق سكالوب الفونجي",
+				en: "Funghi Scallop",
+				ku: "سکالۆپی فونگی",
+				price: 12
+			}
+		]
+	},
+	{
+		id: "pasta",
+		ar: "الباستا",
+		en: "Pasta",
+		ku: "پاستا",
+		emoji: "🍝",
+		items: [
+			{
+				id: "ps1",
+				ar: "لازانيا",
+				en: "Lasagna",
+				ku: "لازانیا",
+				price: 8,
+				descAr: "طبقات من المعكرونة مع صلصة اللحم البولونيز والجبن المشوي.",
+				descEn: "Pasta layers with Bolognese meat sauce and baked cheese.",
+				descKu: "چینەکانی مەعکەرۆنی لەگەڵ سۆسی گۆشتی بۆلۆنیز و پەنیری برژاو."
+			},
+			{
+				id: "ps2",
+				ar: "بنا الفريدو",
+				en: "Penne Alfredo",
+				ku: "پێنێ ئەلفرێدۆ",
+				price: 6
+			},
+			{
+				id: "ps3",
+				ar: "فيتوتشيني الفريدو",
+				en: "Fettuccine Alfredo",
+				ku: "فێتۆچینی ئەلفرێدۆ",
+				price: 7,
+				descAr: "فيتوتشيني بصلصة الفريدو الكريمية مع دجاج مشوي.",
+				descEn: "Fettuccine in creamy Alfredo sauce with grilled chicken.",
+				descKu: "فێتۆچینی بە سۆسی ئەلفرێدۆی کرێمی لەگەڵ مریشکی برژاو."
+			},
+			{
+				id: "ps4",
+				ar: "بنا أربياتا",
+				en: "Penne Arrabbiata",
+				ku: "پێنێ ئەربیاتا",
+				price: 6,
+				tags: ["حار"]
+			},
+			{
+				id: "ps5",
+				ar: "سباغيتي بولونيز",
+				en: "Spaghetti Bolognese",
+				ku: "سپاگێتی بۆلۆنیز",
+				price: 6
+			},
+			{
+				id: "ps6",
+				ar: "فارفيلو",
+				en: "Farfalle",
+				ku: "فارفاللە",
+				price: 7
+			},
+			{
+				id: "ps7",
+				ar: "طاجن معكرونة",
+				en: "Pasta Bake",
+				ku: "تاژنی مەکەرۆنە",
+				price: 8
+			}
+		]
+	},
+	{
+		id: "salads",
+		ar: "السلطات",
+		en: "Salads",
+		ku: "زەڵاتە",
+		emoji: "🥗",
+		items: [
+			{
+				id: "sl1",
+				ar: "سلطة سيزر",
+				en: "Caesar Salad",
+				ku: "زەڵاتەی سیزەر",
+				price: 8,
+				descAr: "خس روماني، بارميزان، خبز محمص وصلصة السيزر الكلاسيكية.",
+				descEn: "Romaine, parmesan, croutons and classic Caesar dressing.",
+				descKu: "کاهوی ڕۆمانی، پەنیری بارمێزان، نانی وشککراو و سۆسی سیزەری کلاسیک."
+			},
+			{
+				id: "sl2",
+				ar: "سلطة فتوش",
+				en: "Fattoush",
+				ku: "زەڵاتەی فەتووش",
+				price: 5
+			},
+			{
+				id: "sl3",
+				ar: "سلطة يونانية",
+				en: "Greek Salad",
+				ku: "زەڵاتەی یۆنانی",
+				price: 5
+			},
+			{
+				id: "sl4",
+				ar: "سلطة جرجير",
+				en: "Arugula Salad",
+				ku: "زەڵاتەی جەرجیر",
+				price: 5
+			},
+			{
+				id: "sl5",
+				ar: "سلطة تونا",
+				en: "Tuna Salad",
+				ku: "زەڵاتەی تونا",
+				price: 5
+			},
+			{
+				id: "sl6",
+				ar: "سلطة الشيف",
+				en: "Chef Salad",
+				ku: "زەڵاتەی شێف",
+				price: 8
+			}
+		]
+	},
+	{
+		id: "crepes",
+		ar: "الكريب والوافل",
+		en: "Crepes & Waffles",
+		ku: "کرێپ و وەفڵ",
+		emoji: "🥞",
+		items: [
+			{
+				id: "cr1",
+				ar: "كريب نوتيلا سادة",
+				en: "Plain Nutella Crepe",
+				ku: "کرێپی نوتێلای سادە",
+				price: 4,
+				descAr: "كريب فرنسي طري مع طبقة سخية من النوتيلا.",
+				descEn: "Soft French crepe with a generous layer of Nutella.",
+				descKu: "کرێپی فەرەنسی نەرم لەگەڵ چینێکی دەوڵەمەند لە نوتێلا."
+			},
+			{
+				id: "cr2",
+				ar: "كريب نوتيلا موز",
+				en: "Nutella Banana Crepe",
+				ku: "کرێپی نوتێلا و مۆز",
+				price: 4
+			},
+			{
+				id: "cr3",
+				ar: "كريب رول",
+				en: "Rolled Crepe",
+				ku: "کرێپ ڕۆڵ",
+				price: 4
+			},
+			{
+				id: "cr4",
+				ar: "كريب فطر مشكلة",
+				en: "Mixed Fruit Crepe",
+				ku: "کرێپی میوەی تێکەڵ",
+				price: 6
+			},
+			{
+				id: "cr5",
+				ar: "كريب بحشوة لوتس",
+				en: "Lotus Stuffed Crepe",
+				ku: "کرێپ بە پڕکراوی لۆتس",
+				price: 5,
+				descAr: "كريب محشو بكريمة اللوتس الكراميل مع بسكويت لوتس مكسر.",
+				descEn: "Crepe filled with Lotus caramel cream and crushed Lotus biscuit.",
+				descKu: "کرێپ پڕکراو بە کرێمی لۆتسی کارامێل لەگەڵ بسکیتی لۆتسی وردکراو."
+			},
+			{
+				id: "cr6",
+				ar: "كريب فستق + مكسرات",
+				en: "Pistachio & Nuts Crepe",
+				ku: "کرێپی فستق و گوێزە",
+				price: 6,
+				tags: ["مكسرات", "Nuts"]
+			},
+			{
+				id: "cr7",
+				ar: "كريب فروتي مشكل MD",
+				en: "Fruity Mix Crepe MD",
+				ku: "کرێپی میوەی تێکەڵاوی MD",
+				price: 8,
+				tags: ["MD"]
+			},
+			{
+				id: "wf1",
+				ar: "وافل نوتيلا سادة",
+				en: "Plain Nutella Waffle",
+				ku: "وەفڵی نوتێلای سادە",
+				price: 4
+			},
+			{
+				id: "wf2",
+				ar: "وافل بحشوة أوريو",
+				en: "Oreo Waffle",
+				ku: "وەفڵ بە پڕکراوی ئۆریۆ",
+				price: 5
+			},
+			{
+				id: "wf3",
+				ar: "وافل فواكه مشكلة",
+				en: "Mixed Fruit Waffle",
+				ku: "وەفڵی میوەی تێکەڵ",
+				price: 6
+			},
+			{
+				id: "wf4",
+				ar: "وافل بحشوة فستق MD",
+				en: "Pistachio Waffle MD",
+				ku: "وەفڵ بە پڕکراوی فستقی MD",
+				price: 7,
+				tags: ["MD", "مكسرات"]
+			}
+		]
+	},
+	{
+		id: "fruits",
+		ar: "أطباق الفواكه",
+		en: "Fruit Plates",
+		ku: "میوە",
+		emoji: "🍓",
+		items: [
+			{
+				id: "fr1",
+				ar: "طبق موز بالنوتيلا",
+				en: "Banana with Nutella",
+				ku: "مۆز بە نوتێلا",
+				price: 4,
+				descAr: "شرائح موز طازج مع رذاذ من النوتيلا الدافئة.",
+				descEn: "Fresh banana slices drizzled with warm Nutella.",
+				descKu: "پارچە مۆزی تازە لەگەڵ نوتێلای گەرم."
+			},
+			{
+				id: "fr2",
+				ar: "طبق موز بالعسل",
+				en: "Banana with Honey",
+				ku: "مۆز بە هەنگوین",
+				price: 4
+			},
+			{
+				id: "fr3",
+				ar: "طبق فواكه ركي وسط",
+				en: "Berry Plate (M)",
+				ku: "میوەی ڕەکی مامناوەند",
+				price: 4
+			},
+			{
+				id: "fr4",
+				ar: "طبق فواكه بطيخ وسط",
+				en: "Watermelon Plate (M)",
+				ku: "میوەی شووتیی مامناوەند",
+				price: 4
+			},
+			{
+				id: "fr5",
+				ar: "طبق فواكه مشكلة وسط",
+				en: "Mixed Fruits (M)",
+				ku: "میوەی تێکەڵاوی مامناوەند",
+				price: 5
+			},
+			{
+				id: "fr6",
+				ar: "طبق فواكه بالنوتيلا",
+				en: "Fruits with Nutella",
+				ku: "میوەی تێکەڵ بە نوتێلا",
+				price: 6
+			},
+			{
+				id: "fr7",
+				ar: "طبق فواكه مشكلة بالآيس كريم كبير",
+				en: "Mixed Fruits w/ Ice Cream (L)",
+				ku: "میوەی تێکەڵ بە بەستەنی گەورە",
+				price: 7,
+				descAr: "تشكيلة فواكه موسمية مع آيس كريم فانيلا وصوص الشوكولاتة.",
+				descEn: "Seasonal fruit selection with vanilla ice cream and chocolate sauce.",
+				descKu: "تێکەڵەی میوەی وەرزی لەگەڵ بەستەنی فانیلا و سۆسی شوکولاتە."
+			}
+		]
+	},
+	{
+		id: "coffee",
+		ar: "القهوة الإيطالية",
+		en: "Italian Coffee",
+		ku: "قاوەی ئیتاڵی",
+		emoji: "☕",
+		items: [
+			{
+				id: "co1",
+				ar: "إسبريسو سنجل",
+				en: "Espresso Single",
+				ku: "ئێسپرێسۆی تاک",
+				price: 2.5
+			},
+			{
+				id: "co2",
+				ar: "إسبريسو دبل",
+				en: "Espresso Double",
+				ku: "ئێسپرێسۆی دووانە",
+				price: 3.5
+			},
+			{
+				id: "co3",
+				ar: "أمريكانو",
+				en: "Americano",
+				ku: "ئەمریکانۆ",
+				price: 3.5
+			},
+			{
+				id: "co4",
+				ar: "لاتيه إيطالي سادة",
+				en: "Italian Latte Plain",
+				ku: "لاتێی ئیتاڵی سادە",
+				price: 3.5,
+				descAr: "إسبريسو غني مع حليب مبخر مخملي.",
+				descEn: "Rich espresso topped with velvety steamed milk.",
+				descKu: "ئێسپرێسۆی دەوڵەمەند لەگەڵ شیری گەرمی مەخمەلی."
+			},
+			{
+				id: "co5",
+				ar: "لاتيه إيطالي فانيلا",
+				en: "Italian Latte Vanilla",
+				ku: "لاتێی ئیتاڵی فانیلا",
+				price: 4
+			},
+			{
+				id: "co6",
+				ar: "لاتيه إيطالي كراميل",
+				en: "Italian Latte Caramel",
+				ku: "لاتێی ئیتاڵی کارامێل",
+				price: 5
+			},
+			{
+				id: "co7",
+				ar: "كابتشينو سادة",
+				en: "Cappuccino Plain",
+				ku: "کاپۆچینۆی سادە",
+				price: 4
+			},
+			{
+				id: "co8",
+				ar: "كابتشينو إيطالي MD",
+				en: "Italian Cappuccino MD",
+				ku: "کاپۆچینۆی ئیتاڵی MD",
+				price: 6,
+				tags: ["MD"]
+			},
+			{
+				id: "co9",
+				ar: "قهوة تركية",
+				en: "Turkish Coffee",
+				ku: "قاوەی تورکی",
+				price: 2.5
+			},
+			{
+				id: "co10",
+				ar: "قهوة عربية",
+				en: "Arabic Coffee",
+				ku: "قاوەی عەرەبی",
+				price: 2.5
+			}
+		]
+	},
+	{
+		id: "hot",
+		ar: "المشروبات الساخنة",
+		en: "Hot Drinks",
+		ku: "خواردنەوەی گەرم",
+		emoji: "🫖",
+		items: [
+			{
+				id: "ht1",
+				ar: "حليب ساخن سادة",
+				en: "Plain Hot Milk",
+				ku: "شیری گەرمی سادە",
+				price: 3
+			},
+			{
+				id: "ht2",
+				ar: "حليب ساخن بالعسل",
+				en: "Hot Milk with Honey",
+				ku: "شیری گەرم بە هەنگوین",
+				price: 3.5
+			},
+			{
+				id: "ht3",
+				ar: "حليب ساخن بالدارسين",
+				en: "Hot Milk with Cinnamon",
+				ku: "شیری گەرم بە دارچین",
+				price: 3.5
+			},
+			{
+				id: "ht4",
+				ar: "حليب ساخن بالهيل",
+				en: "Hot Milk with Cardamom",
+				ku: "شیری گەرم بە هێل",
+				price: 3.5
+			},
+			{
+				id: "ht5",
+				ar: "شوكولاتة ساخنة",
+				en: "Hot Chocolate",
+				ku: "شیکۆلاتەی گەرم",
+				price: 4,
+				descAr: "شوكولاتة بلجيكية داكنة ذائبة في حليب دافئ مع كريمة مخفوقة.",
+				descEn: "Belgian dark chocolate melted in warm milk with whipped cream.",
+				descKu: "شوکولاتەی تاریکی بەلجیکی تواوە لەناو شیری گەرم لەگەڵ کرێم."
+			},
+			{
+				id: "ht6",
+				ar: "نوتيلا ساخنة",
+				en: "Hot Nutella",
+				ku: "نوتێلای گەرم",
+				price: 4
+			},
+			{
+				id: "ht7",
+				ar: "سحلب بالفستق",
+				en: "Sahlab with Pistachio",
+				ku: "سەحلەب بە فستق",
+				price: 5,
+				tags: ["مكسرات"]
+			},
+			{
+				id: "ht8",
+				ar: "لوتس ساخنة",
+				en: "Hot Lotus",
+				ku: "لۆتسی گەرم",
+				price: 5
+			},
+			{
+				id: "ht9",
+				ar: "نستله ساخنة سنيكرز MD",
+				en: "Hot Nestle Snickers MD",
+				ku: "نێستلێی گەرمی سنیکەرز MD",
+				price: 6,
+				tags: ["MD"]
+			}
+		]
+	},
+	{
+		id: "shakes",
+		ar: "ميلك شيك بالآيس كريم",
+		en: "Milkshakes",
+		ku: "میڵک شەیک",
+		emoji: "🥤",
+		items: [
+			{
+				id: "ms1",
+				ar: "شيك نوتيلا سادة",
+				en: "Plain Nutella Shake",
+				ku: "شەیکی نوتێلای سادە",
+				price: 4
+			},
+			{
+				id: "ms2",
+				ar: "شيك نوتيلا كوكيز",
+				en: "Nutella Cookies Shake",
+				ku: "شەیکی نوتێلا کووکیز",
+				price: 4
+			},
+			{
+				id: "ms3",
+				ar: "شيك سيريلاك",
+				en: "Cerelac Shake",
+				ku: "شەیکی سێریلاک",
+				price: 4
+			},
+			{
+				id: "ms4",
+				ar: "شيك فراولة",
+				en: "Strawberry Shake",
+				ku: "شەیکی فراولە",
+				price: 5,
+				descAr: "فراولة طازجة مخفوقة مع آيس كريم وحليب بارد.",
+				descEn: "Fresh strawberries blended with ice cream and cold milk.",
+				descKu: "فراولەی تازە تێکەڵکراو لەگەڵ بەستەنی و شیری سارد."
+			},
+			{
+				id: "ms5",
+				ar: "شيك بلوبيري",
+				en: "Blueberry Shake",
+				ku: "شەیکی بلووبێری",
+				price: 5
+			},
+			{
+				id: "ms6",
+				ar: "شيك أناناس",
+				en: "Pineapple Shake",
+				ku: "شەیکی ئەناناس",
+				price: 5
+			},
+			{
+				id: "ms7",
+				ar: "شيك أوريو",
+				en: "Oreo Shake",
+				ku: "شەیکی ئۆریۆ",
+				price: 6
+			},
+			{
+				id: "ms8",
+				ar: "شيك لوتس",
+				en: "Lotus Shake",
+				ku: "شەیکی لۆتس",
+				price: 6
+			},
+			{
+				id: "ms9",
+				ar: "شيك فستق",
+				en: "Pistachio Shake",
+				ku: "شەیکی فستق",
+				price: 7,
+				tags: ["مكسرات"]
+			},
+			{
+				id: "ms10",
+				ar: "شيك MD",
+				en: "MD Shake",
+				ku: "شەیکی MD",
+				price: 8,
+				tags: ["MD"]
+			}
+		]
+	},
+	{
+		id: "cold",
+		ar: "المشروبات الباردة",
+		en: "Cold Drinks",
+		ku: "خواردنەوەی سارد",
+		emoji: "🧊",
+		items: [
+			{
+				id: "cd1",
+				ar: "موهيتو ركي",
+				en: "Berry Mojito",
+				ku: "مۆهیتۆی ڕەکی",
+				price: 4
+			},
+			{
+				id: "cd2",
+				ar: "موهيتو ليمون نعناع",
+				en: "Lemon Mint Mojito",
+				ku: "مۆهیتۆی لیمۆ و پونگ",
+				price: 4,
+				descAr: "ليمون طازج، نعناع، صودا وثلج مجروش — منعش بشكل مثالي.",
+				descEn: "Fresh lemon, mint, soda and crushed ice — perfectly refreshing.",
+				descKu: "لیمۆی تازە، پونگ، سۆدا و سەهۆڵی وردکراو — بە تەواوی نوێکار."
+			},
+			{
+				id: "cd3",
+				ar: "موهيتو فراولة",
+				en: "Strawberry Mojito",
+				ku: "مۆهیتۆی فراولە",
+				price: 4
+			},
+			{
+				id: "cd4",
+				ar: "موهيتو أناناس",
+				en: "Pineapple Mojito",
+				ku: "مۆهیتۆی ئەناناس",
+				price: 5
+			},
+			{
+				id: "cd5",
+				ar: "موهيتو بلوبيري",
+				en: "Blueberry Mojito",
+				ku: "مۆهیتۆی بلووبێری",
+				price: 5
+			},
+			{
+				id: "cd6",
+				ar: "موهيتو آيس لاند",
+				en: "Iceland Mojito",
+				ku: "مۆهیتۆی ئایس لاند",
+				price: 6
+			},
+			{
+				id: "cd7",
+				ar: "موهيتو فروتي MD",
+				en: "Fruity Mojito MD",
+				ku: "مۆهیتۆی میوەیی MD",
+				price: 6,
+				tags: ["MD"]
+			},
+			{
+				id: "cd8",
+				ar: "بلو سكاي",
+				en: "Blue Sky",
+				ku: "بلو سکای",
+				price: 5
+			},
+			{
+				id: "cd9",
+				ar: "ريد ليدي",
+				en: "Red Lady",
+				ku: "ڕێد لەیدی",
+				price: 6
+			},
+			{
+				id: "cd10",
+				ar: "كولاده آيسد MD",
+				en: "Iced Colada MD",
+				ku: "کۆلادەی ئایسد MD",
+				price: 7,
+				tags: ["MD"]
+			}
+		]
+	},
+	{
+		id: "soft",
+		ar: "المشروبات الغازية",
+		en: "Soft Drinks",
+		ku: "خواردنەوەی گازدار",
+		emoji: "🥫",
+		items: [
+			{
+				id: "sd1",
+				ar: "كولا",
+				en: "Cola",
+				ku: "کۆلا",
+				price: 1
+			},
+			{
+				id: "sd2",
+				ar: "فانتا",
+				en: "Fanta",
+				ku: "فانتا",
+				price: 1
+			},
+			{
+				id: "sd3",
+				ar: "سبرايت",
+				en: "Sprite",
+				ku: "سپرایت",
+				price: 1
+			},
+			{
+				id: "sd4",
+				ar: "صودا ليمون",
+				en: "Lemon Soda",
+				ku: "sۆدای لیمۆ",
+				price: 1.5
+			},
+			{
+				id: "sd5",
+				ar: "تايغر",
+				en: "Tiger Energy",
+				ku: "تایگەر",
+				price: 1.5
+			},
+			{
+				id: "sd6",
+				ar: "ماء",
+				en: "Water",
+				ku: "ئاو",
+				price: .5
+			},
+			{
+				id: "sd7",
+				ar: "شاي عادي",
+				en: "Tea",
+				ku: "چای ئاسایی",
+				price: .5
+			},
+			{
+				id: "sd8",
+				ar: "شاي ليبتون",
+				en: "Lipton Tea",
+				ku: "چای لیپتۆن",
+				price: .5
+			},
+			{
+				id: "sd9",
+				ar: "شاي حامض",
+				en: "Lemon Tea",
+				ku: "چای ترش",
+				price: 1.5
+			},
+			{
+				id: "sd10",
+				ar: "شاي دارسين",
+				en: "Cinnamon Tea",
+				ku: "چای دارچین",
+				price: 1.5
+			}
+		]
+	},
+	{
+		id: "fresh",
+		ar: "العصائر الطبيعية",
+		en: "Fresh Juices",
+		ku: "شەربەتی سروشتی",
+		emoji: "🍹",
+		items: [
+			{
+				id: "fj1",
+				ar: "فريش أناناس",
+				en: "Fresh Pineapple",
+				ku: "فرێشی ئەناناس",
+				price: 14,
+				descAr: "أناناس طبيعي ١٠٠٪ معصور طازج عند الطلب.",
+				descEn: "100% fresh pineapple, pressed to order.",
+				descKu: "ئەناناسی ١٠٠٪ سروشتی، لەسەر داواکاری دەگوشرێت."
+			},
+			{
+				id: "fj2",
+				ar: "فريش بطيخ",
+				en: "Fresh Watermelon",
+				ku: "فرێشی شووتی",
+				price: 14
+			},
+			{
+				id: "fj3",
+				ar: "فريش شمام",
+				en: "Fresh Melon",
+				ku: "فرێشی شەمام",
+				price: 13
+			},
+			{
+				id: "fj4",
+				ar: "فريش بوملي",
+				en: "Fresh Pomelo",
+				ku: "فرێشی بومەلی",
+				price: 12
+			},
+			{
+				id: "fj5",
+				ar: "فريش رمان",
+				en: "Fresh Pomegranate",
+				ku: "فرێشی هەنار",
+				price: 12
+			},
+			{
+				id: "fj6",
+				ar: "سبيشل فريش MD",
+				en: "Special Fresh MD",
+				ku: "سپێشاڵ فرێشی MD",
+				price: 24,
+				tags: ["MD"]
+			},
+			{
+				id: "fj7",
+				ar: "كويكويلكو فريش MD",
+				en: "Cuicuilco Fresh MD",
+				ku: "کویکویلکۆ فرێشی MD",
+				price: 20,
+				tags: ["MD"]
+			}
+		]
+	},
+	{
+		id: "hookah",
+		ar: "النراكيل",
+		en: "Hookah",
+		ku: "نێرگیلە",
+		emoji: "💨",
+		items: [
+			{
+				id: "hk1",
+				ar: "نركيلة MD",
+				en: "Hookah MD",
+				ku: "نارگیلەی MD",
+				price: 7,
+				tags: ["MD"]
+			},
+			{
+				id: "hk2",
+				ar: "ليمون ونعناع",
+				en: "Lemon & Mint",
+				ku: "لیمۆ و پونگ",
+				price: 7
+			},
+			{
+				id: "hk3",
+				ar: "علكة ونعناع",
+				en: "Gum & Mint",
+				ku: "بنیشت و پونگ",
+				price: 7
+			},
+			{
+				id: "hk4",
+				ar: "علكة وبطيخ",
+				en: "Gum & Melon",
+				ku: "بنیشت و شووتی",
+				price: 7
+			},
+			{
+				id: "hk5",
+				ar: "إنجليزي",
+				en: "English",
+				ku: "ئینگلیزی",
+				price: 7
+			},
+			{
+				id: "hk6",
+				ar: "تفاح",
+				en: "Apple",
+				ku: "سێو",
+				price: 7
+			},
+			{
+				id: "hk7",
+				ar: "تفاح ونعناع",
+				en: "Apple & Mint",
+				ku: "سێو و پونگ",
+				price: 7
+			},
+			{
+				id: "hk8",
+				ar: "بلوبيري",
+				en: "Blueberry",
+				ku: "بلووبێری",
+				price: 7
+			},
+			{
+				id: "hk9",
+				ar: "هافانا",
+				en: "Havana",
+				ku: "هاڤانا",
+				price: 7
+			},
+			{
+				id: "hk10",
+				ar: "رمان",
+				en: "Pomegranate",
+				ku: "هەنار",
+				price: 7
+			},
+			{
+				id: "hk11",
+				ar: "آيس كريم",
+				en: "Ice Cream",
+				ku: "بەستەنی",
+				price: 7
+			},
+			{
+				id: "hk12",
+				ar: "قزوان",
+				en: "Qazwan",
+				ku: "قەزوان",
+				price: 7
+			},
+			{
+				id: "hk13",
+				ar: "ليمون VIP",
+				en: "Lemon VIP",
+				ku: "لیمۆ VIP",
+				price: 10,
+				tags: ["VIP"]
+			},
+			{
+				id: "hk14",
+				ar: "فواكه VIP",
+				en: "Fruit VIP",
+				ku: "میوەی VIP",
+				price: 10,
+				tags: ["VIP"]
+			},
+			{
+				id: "hk15",
+				ar: "علكة وبطيخ VIP",
+				en: "Gum & Watermelon VIP",
+				ku: "بنیشت و شووتی VIP",
+				price: 10,
+				tags: ["VIP"]
+			}
+		]
+	},
+	{
+		id: "rizzo",
+		ar: "الريزو",
+		en: "Rizzo",
+		ku: "ڕیزۆ",
+		emoji: "🍚",
+		items: [
+			{
+				id: "rz1",
+				ar: "ريزو كلاسيك",
+				en: "Classic Rizzo",
+				ku: "ڕایزۆی کلاسیک",
+				price: 8,
+				descAr: "أرز كريمي على الطريقة الإيطالية مع جبن البارميزان والزبدة.",
+				descEn: "Creamy Italian-style rice with parmesan and butter.",
+				descKu: "برنجی کرێمی بە شێوازی ئیتاڵی لەگەڵ پەنیری بارمێزان و کەرە."
+			},
+			{
+				id: "rz2",
+				ar: "ريزو حار",
+				en: "Spicy Rizzo",
+				ku: "ڕایزۆی تیژ",
+				price: 9,
+				descAr: "ريزو بالفلفل الحار والصلصة الحمراء وقطع الدجاج المتبل.",
+				descEn: "Rizzo with chili, red sauce and spiced chicken pieces.",
+				descKu: "ڕایزۆ بە بیبەری تیژ، سۆسی سوور و پارچە مریشکی بەهاراتکراو.",
+				tags: ["حار", "Spicy"]
+			},
+			{
+				id: "rz3",
+				ar: "ريزو فطر",
+				en: "Mushroom Rizzo",
+				ku: "ڕایزۆی قارچک",
+				price: 9,
+				descAr: "ريزو كريمي مع فطر سوتيه بالزبدة والثوم.",
+				descEn: "Creamy rizzo with sautéed mushrooms, butter and garlic.",
+				descKu: "ڕایزۆی کرێمی لەگەڵ قارچکی سوورەکراو بە کەرە و سیر."
+			},
+			{
+				id: "rz4",
+				ar: "ريزو دجاج MD",
+				en: "MD Chicken Rizzo",
+				ku: "ڕایزۆی مریشکی MD",
+				price: 11,
+				descAr: "وصفة MD الخاصة بالأرز الكريمي وقطع الدجاج المشوي.",
+				descEn: "MD signature creamy rice with grilled chicken pieces.",
+				descKu: "ڕایزۆی تایبەتی MD لەگەڵ پارچە مریشکی برژاو.",
+				tags: ["MD"]
+			}
+		]
+	},
+	{
+		id: "kentucky",
+		ar: "الكنتاكي",
+		en: "Kentucky",
+		ku: "کەنتەکی",
+		emoji: "🍗",
+		items: [
+			{
+				id: "kt1",
+				ar: "بوكس دجاج مقرمش ٣ قطع",
+				en: "3-Piece Crispy Chicken Box",
+				ku: "بۆکسی مریشکی مقرمش ٣ پارچە",
+				price: 7,
+				descAr: "ثلاث قطع دجاج مقرمش بتتبيلة الأعشاب السرية مع بطاطس مقلية وخبز.",
+				descEn: "Three pieces of crispy chicken with secret herb seasoning, fries and bun.",
+				descKu: "سێ پارچە مریشکی مقرمش بە بەهاراتی گیایی نهێنی لەگەڵ فینگر و نان."
+			},
+			{
+				id: "kt2",
+				ar: "وجبة كنتاكي عائلية",
+				en: "Family Kentucky Meal",
+				ku: "وجبەی کەنتەکی خێزانی",
+				price: 22,
+				descAr: "٨ قطع دجاج مقرمش مع بطاطس كبيرة، كولسلو وأربع قطع خبز.",
+				descEn: "8 pieces crispy chicken with large fries, coleslaw and 4 buns.",
+				descKu: "٨ پارچە مریشکی مقرمش لەگەڵ فینگری گەورە، کۆڵسلاو و ٤ نان.",
+				tags: ["MD"]
+			},
+			{
+				id: "kt3",
+				ar: "زنجر كنتاكي حار",
+				en: "Spicy Zinger Kentucky",
+				ku: "زینگەری کەنتەکی تیژ",
+				price: 5.5,
+				descAr: "ساندويش زنجر حار بتتبيلة الفلفل مع صلصة المايونيز والخس.",
+				descEn: "Spicy zinger sandwich with mayo and lettuce.",
+				descKu: "ساندویچی زینگەری تیژ لەگەڵ مایۆنیز و کاهو.",
+				tags: ["حار", "Spicy"]
+			},
+			{
+				id: "kt4",
+				ar: "وجبة سترايبس ٥ قطع",
+				en: "5-Piece Chicken Strips",
+				ku: "وجبەی ستڕایپس ٥ پارچە",
+				price: 8,
+				descAr: "خمس شرائح دجاج مقرمش مع بطاطس وصلصتين للغمس.",
+				descEn: "Five crispy chicken strips with fries and two dipping sauces.",
+				descKu: "پێنج پارچە ستریپسی مریشکی مقرمش لەگەڵ فینگر و دوو سۆسی جیاواز."
+			},
+			{
+				id: "kt5",
+				ar: "وينقز كنتاكي ٦ قطع",
+				en: "6-Piece Hot Wings",
+				ku: "وینگزی کەنتەکی ٦ پارچە",
+				price: 6.5,
+				descAr: "أجنحة دجاج مقرمشة بصلصة الباربكيو الحارة.",
+				descEn: "Crispy chicken wings tossed in hot BBQ sauce.",
+				descKu: "باڵە مریشکی مقرمش بە سۆسی بەربێکیوی تیژ.",
+				tags: ["حار"]
+			}
+		]
+	},
+	{
+		id: "saj",
+		ar: "الصاج",
+		en: "Saj",
+		ku: "ساجی",
+		emoji: "🥙",
+		items: [
+			{
+				id: "sj1",
+				ar: "صاج دجاج",
+				en: "Chicken Saj",
+				ku: "ساجی مریشک",
+				price: 6,
+				descAr: "خبز صاج طازج محشو بقطع الدجاج المتبل والخضار وصلصة الثوم.",
+				descEn: "Fresh saj bread filled with spiced chicken, vegetables and garlic sauce.",
+				descKu: "نانی ساجی تازە پڕکراو بە پارچە مریشکی متبلکراو، سەوزە و سۆسی سیر."
+			},
+			{
+				id: "sj2",
+				ar: "صاج لحم",
+				en: "Meat Saj",
+				ku: "ساجی گۆشت",
+				price: 7,
+				descAr: "صاج محشو بشرائح اللحم المشوي والبصل والطماطم.",
+				descEn: "Saj filled with grilled beef strips, onion and tomato.",
+				descKu: "ساجی پڕکراو بە گۆشتی برژاو، پیاز و تەماتە."
+			},
+			{
+				id: "sj3",
+				ar: "صاج جبن",
+				en: "Cheese Saj",
+				ku: "ساجی پەنیر",
+				price: 5,
+				descAr: "صاج بالجبنة الذائبة والزعتر.",
+				descEn: "Saj with melted cheese and zaatar.",
+				descKu: "ساجی بە پەنیری تواوە و زەعتر."
+			},
+			{
+				id: "sj4",
+				ar: "صاج مشكل MD",
+				en: "MD Mixed Saj",
+				ku: "ساجی تێکەڵاوی MD",
+				price: 9,
+				descAr: "تشكيلة من اللحم والدجاج والخضار في خبز الصاج الطازج.",
+				descEn: "A mix of beef, chicken and veggies in fresh saj bread.",
+				descKu: "تێکەڵەیەک لە گۆشت، مریشک و سەوزە لەناو نانی ساجی تازەدا.",
+				tags: ["MD"]
+			}
+		]
+	},
+	{
+		id: "fakhar",
+		ar: "أطباق الفخار",
+		en: "Clay Pot Dishes",
+		ku: "خواردنی فەخار",
+		emoji: "🍲",
+		items: [
+			{
+				id: "fk1",
+				ar: "فخارة كباب بلدي",
+				en: "Baladi Kebab Clay Pot",
+				ku: "فەخاری کەبابی بەڵەدی",
+				price: 12,
+				descAr: "كباب لحم بلدي مطهو ببطء في فخارة طينية مع الطماطم والفلفل والبصل.",
+				descEn: "Traditional kebab slow-cooked in a clay pot with tomato, peppers and onion.",
+				descKu: "کەبابی بەڵەدی بە هێواشی لە فەخاری قوڕدا کوڵاوە لەگەڵ تەماتە و بیبەر و پیاز.",
+				tags: ["MD"]
+			},
+			{
+				id: "fk2",
+				ar: "فخارة دجاج بالخضار",
+				en: "Chicken Clay Pot with Vegetables",
+				ku: "فەخاری مریشک بە سەوزە",
+				price: 10.5,
+				descAr: "قطع دجاج طرية مع خضار موسمية في صلصة فخار غنية.",
+				descEn: "Tender chicken pieces with seasonal vegetables in a rich clay-pot sauce.",
+				descKu: "پارچەکانی مریشکی نەرم لەگەڵ سەوزەی وەرزی لە سۆسێکی دەوڵەمەند."
+			},
+			{
+				id: "fk3",
+				ar: "فخارة غنم موزة",
+				en: "Lamb Shank Clay Pot",
+				ku: "فەخاری ساقی بەران",
+				price: 15,
+				descAr: "موزة غنم مطهوة ببطء حتى تذوب مع البهارات الشرقية الفاخرة.",
+				descEn: "Lamb shank slow-cooked until tender with premium Oriental spices.",
+				descKu: "ساقی بەرانی هێواش کوڵاوە لەگەڵ بەهاراتی ڕۆژهەڵاتی نایاب.",
+				tags: ["MD"]
+			}
+		]
+	}
+];
+//#endregion
+export { FALLBACK_SECTIONS as t };
