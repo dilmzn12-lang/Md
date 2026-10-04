@@ -1,5 +1,7 @@
-import * as fs from "fs";
-import * as path from "path";
+import { FALLBACK_SECTIONS } from "./menu-data";
+
+// Global cache to persist in-memory (no disk writes, 100% edge/serverless safe)
+let memoryStore: DBStore | null = null;
 
 // Simple helper to generate a UUID-like string if needed
 function generateUUID() {
@@ -44,14 +46,7 @@ interface DBStore {
   items: ItemRow[];
 }
 
-const STORE_FILE = path.join(process.cwd(), "menu_store.json");
-
-import { FALLBACK_SECTIONS } from "./menu-data";
-
-// Global cache to persist in-memory if disk is read-only (e.g. on Vercel serverless)
-let memoryStore: DBStore | null = null;
-
-// Helper to seed database
+// Helper to seed database in-memory
 function seedDatabase(): DBStore {
   const categories: CategoryRow[] = [];
   const items: ItemRow[] = [];
@@ -92,53 +87,19 @@ function seedDatabase(): DBStore {
 
   const initialDB = { categories, items };
   memoryStore = initialDB;
-  
-  try {
-    fs.writeFileSync(STORE_FILE, JSON.stringify(initialDB, null, 2), "utf8");
-  } catch (err) {
-    console.warn("[Local DB] Write failed during seed (likely read-only Vercel FS). Falling back to in-memory store.", err);
-  }
-  
   return initialDB;
 }
 
-// Overwrite logic if Kurdish names are missing (force re-seed)
+// Read database purely from in-memory cache (fully edge-safe)
 export function readDB(): DBStore {
-  if (memoryStore) {
-    return memoryStore;
+  if (!memoryStore) {
+    memoryStore = seedDatabase();
   }
-
-  try {
-    if (!fs.existsSync(STORE_FILE)) {
-      return seedDatabase();
-    }
-    const data = fs.readFileSync(STORE_FILE, "utf8");
-    // Check if the current database file has Kurdish translations fully integrated
-    if (
-      !data.includes('"name_ku": "بەرگەری کلاسیک گۆشت"') &&
-      !data.includes('"name_ku":"بەرگەری کلاسیک گۆشت"')
-    ) {
-      console.warn(
-        "[Local DB] Existing database does not have full Kurdish translations. Force re-seeding...",
-      );
-      return seedDatabase();
-    }
-    const parsed = JSON.parse(data);
-    memoryStore = parsed;
-    return parsed;
-  } catch (err) {
-    console.error("Failed to read JSON DB, re-seeding:", err);
-    return seedDatabase();
-  }
+  return memoryStore;
 }
 
 export function writeDB(db: DBStore) {
   memoryStore = db;
-  try {
-    fs.writeFileSync(STORE_FILE, JSON.stringify(db, null, 2), "utf8");
-  } catch (err) {
-    console.error("[Local DB] Failed to write JSON DB (likely read-only Vercel FS):", err);
-  }
 }
 
 export function getCategories() {
