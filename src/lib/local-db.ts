@@ -48,6 +48,9 @@ const STORE_FILE = path.join(process.cwd(), "menu_store.json");
 
 import { FALLBACK_SECTIONS } from "./menu-data";
 
+// Global cache to persist in-memory if disk is read-only (e.g. on Vercel serverless)
+let memoryStore: DBStore | null = null;
+
 // Helper to seed database
 function seedDatabase(): DBStore {
   const categories: CategoryRow[] = [];
@@ -88,12 +91,23 @@ function seedDatabase(): DBStore {
   });
 
   const initialDB = { categories, items };
-  fs.writeFileSync(STORE_FILE, JSON.stringify(initialDB, null, 2), "utf8");
+  memoryStore = initialDB;
+  
+  try {
+    fs.writeFileSync(STORE_FILE, JSON.stringify(initialDB, null, 2), "utf8");
+  } catch (err) {
+    console.warn("[Local DB] Write failed during seed (likely read-only Vercel FS). Falling back to in-memory store.", err);
+  }
+  
   return initialDB;
 }
 
 // Overwrite logic if Kurdish names are missing (force re-seed)
 export function readDB(): DBStore {
+  if (memoryStore) {
+    return memoryStore;
+  }
+
   try {
     if (!fs.existsSync(STORE_FILE)) {
       return seedDatabase();
@@ -109,7 +123,9 @@ export function readDB(): DBStore {
       );
       return seedDatabase();
     }
-    return JSON.parse(data);
+    const parsed = JSON.parse(data);
+    memoryStore = parsed;
+    return parsed;
   } catch (err) {
     console.error("Failed to read JSON DB, re-seeding:", err);
     return seedDatabase();
@@ -117,10 +133,11 @@ export function readDB(): DBStore {
 }
 
 export function writeDB(db: DBStore) {
+  memoryStore = db;
   try {
     fs.writeFileSync(STORE_FILE, JSON.stringify(db, null, 2), "utf8");
   } catch (err) {
-    console.error("Failed to write JSON DB:", err);
+    console.error("[Local DB] Failed to write JSON DB (likely read-only Vercel FS):", err);
   }
 }
 
