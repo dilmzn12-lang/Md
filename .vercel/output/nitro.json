@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-04T18:11:47.143Z",
+  "date": "2026-10-04T18:27:12.384Z",
   "preset": "vercel",
   "framework": {
     "name": "nitro",
@@ -8,7 +8,7 @@
   "versions": {
     "nitro": "3.0.260603-beta"
   },
-  "serverEntry": "functions/__server.func/index.mjs",
+  "serverEntry": "functions/__server.func/vercel.web.mjs",
   "publicDir": "static",
   "commands": {
     "preview": "npx srvx --static ../../static ./functions/__server.func/index.mjs",

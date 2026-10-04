@@ -1,7 +1,7 @@
-import { t as FALLBACK_SECTIONS } from "./menu-data-D0eK3kH3.mjs";
+import { t as FALLBACK_SECTIONS } from "./menu-data-D0eK3kH3-3-OpHzXc.mjs";
 import * as fs from "fs";
 import * as path from "path";
-//#region node_modules/.nitro/vite/services/ssr/assets/local-db-CFlSiZE5.js
+//#region node_modules/.nitro/vite/services/ssr/assets/local-db-Ccymnu-V.js
 function generateUUID() {
 	return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
 		const r = Math.random() * 16 | 0;
@@ -9,6 +9,7 @@ function generateUUID() {
 	});
 }
 var STORE_FILE = path.join(process.cwd(), "menu_store.json");
+var memoryStore = null;
 function seedDatabase() {
 	const categories = [];
 	const items = [];
@@ -48,10 +49,16 @@ function seedDatabase() {
 		categories,
 		items
 	};
-	fs.writeFileSync(STORE_FILE, JSON.stringify(initialDB, null, 2), "utf8");
+	memoryStore = initialDB;
+	try {
+		fs.writeFileSync(STORE_FILE, JSON.stringify(initialDB, null, 2), "utf8");
+	} catch (err) {
+		console.warn("[Local DB] Write failed during seed (likely read-only Vercel FS). Falling back to in-memory store.", err);
+	}
 	return initialDB;
 }
 function readDB() {
+	if (memoryStore) return memoryStore;
 	try {
 		if (!fs.existsSync(STORE_FILE)) return seedDatabase();
 		const data = fs.readFileSync(STORE_FILE, "utf8");
@@ -59,17 +66,20 @@ function readDB() {
 			console.warn("[Local DB] Existing database does not have full Kurdish translations. Force re-seeding...");
 			return seedDatabase();
 		}
-		return JSON.parse(data);
+		const parsed = JSON.parse(data);
+		memoryStore = parsed;
+		return parsed;
 	} catch (err) {
 		console.error("Failed to read JSON DB, re-seeding:", err);
 		return seedDatabase();
 	}
 }
 function writeDB(db) {
+	memoryStore = db;
 	try {
 		fs.writeFileSync(STORE_FILE, JSON.stringify(db, null, 2), "utf8");
 	} catch (err) {
-		console.error("Failed to write JSON DB:", err);
+		console.error("[Local DB] Failed to write JSON DB (likely read-only Vercel FS):", err);
 	}
 }
 function getCategories() {

@@ -1,11 +1,11 @@
-import { i as __toESM } from "../_runtime.mjs";
-import { o as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { t as require_jsx_dev_runtime } from "../_libs/react.mjs";
-import { t as supabase } from "./client-C3nePkEI.mjs";
-import { t as FALLBACK_SECTIONS } from "./menu-data-D0eK3kH3.mjs";
-import { n as pickImageUrl, t as categoryFallbackImage } from "./menu-images-DWa5oqgz.mjs";
-import { a as Search, c as Languages, i as Star, l as Instagram, n as Wifi, o as MessageCircle, r as UtensilsCrossed, s as MapPin, t as X } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BdEIC3XG.js
+import { i as __toESM } from "./rolldown-runtime-B4iAMlE-.mjs";
+import { o as require_react } from "./_libs/@tanstack/react-query-CB0bWH69.mjs";
+import { t as require_jsx_dev_runtime } from "./_libs/react-BWP_pAhQ.mjs";
+import { t as supabase } from "./client-D9sCsIHo-nM_kbN6V.mjs";
+import { t as FALLBACK_SECTIONS } from "./menu-data-D0eK3kH3-3-OpHzXc.mjs";
+import { n as pickImageUrl, t as categoryFallbackImage } from "./menu-images-DWa5oqgz-GqE3Fqlq.mjs";
+import { a as Search, c as Languages, i as Star, l as Instagram, n as Wifi, o as MessageCircle, r as UtensilsCrossed, s as MapPin, t as X } from "./_libs/lucide-react-CsSvOBrC.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-rizmJxRC.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_dev_runtime = require_jsx_dev_runtime();
 var md_logo_jpg_asset_default = {

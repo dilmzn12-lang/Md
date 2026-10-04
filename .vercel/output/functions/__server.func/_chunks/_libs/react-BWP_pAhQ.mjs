@@ -1,4 +1,4 @@
-import { t as __commonJSMin } from "../_runtime.mjs";
+import { t as __commonJSMin } from "../rolldown-runtime-B4iAMlE-.mjs";
 //#region node_modules/react/cjs/react-jsx-dev-runtime.production.js
 /**
 * @license React

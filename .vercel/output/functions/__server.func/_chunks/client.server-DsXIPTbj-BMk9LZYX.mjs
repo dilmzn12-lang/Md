@@ -1,6 +1,6 @@
-import { t as createClient } from "../_libs/supabase__supabase-js.mjs";
-import { t as supabase } from "./client-C3nePkEI.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/client.server-VcgB17SN.js
+import { t as createClient } from "./_libs/@supabase/supabase-js-DWxg1mqX.mjs";
+import { t as supabase } from "./client-D9sCsIHo-nM_kbN6V.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/client.server-DsXIPTbj.js
 function createSupabaseAdminClient() {
 	const SUPABASE_URL = process.env.SUPABASE_URL;
 	const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;

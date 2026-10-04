@@ -1,5 +1,5 @@
-import { a as getServerFnById, i as TSS_SERVER_FUNCTION } from "./server-CwgRcQHQ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/createSsrRpc-YuYpFLfP.js
+import { a as getServerFnById, i as TSS_SERVER_FUNCTION } from "./server-WJMo2uwj-BlZJcsvx.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/createSsrRpc-DAomel5P.js
 var createSsrRpc = (functionId) => {
 	const url = "/_serverFn/" + functionId;
 	const serverFnMeta = { id: functionId };

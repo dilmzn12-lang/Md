@@ -11,7 +11,17 @@ if (process.env.VERCEL) {
 }
 
 export default defineConfig({
-  nitro: true,
+  nitro: {
+    rollupConfig: {
+      output: {
+        chunkFileNames: (chunkInfo) => {
+          const cleanName = chunkInfo.name.replace(/\+/g, "-");
+          return `_chunks/${cleanName}-[hash].mjs`;
+        },
+        entryFileNames: "[name].mjs",
+      }
+    }
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this

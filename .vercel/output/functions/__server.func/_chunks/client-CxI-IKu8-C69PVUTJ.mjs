@@ -1,6 +1,6 @@
-import { r as createServerFn } from "./server-CwgRcQHQ.mjs";
-import { t as createServerRpc } from "./createServerRpc-VE192koc.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/client-D3rkIwTJ.js
+import { r as createServerFn } from "./server-WJMo2uwj-BlZJcsvx.mjs";
+import { t as createServerRpc } from "./createServerRpc-BAp60N9v-CpQTp0uN.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/client-CxI-IKu8.js
 var handleMockQuery_createServerFn_handler = createServerRpc({
 	id: "3e84187ae861101d6bf7e103a63c495698c0f272e7dd1427d3d61f542531a7e2",
 	name: "handleMockQuery",
@@ -8,7 +8,7 @@ var handleMockQuery_createServerFn_handler = createServerRpc({
 }, (opts) => handleMockQuery.__executeServer(opts));
 var handleMockQuery = createServerFn({ method: "POST" }).inputValidator((input) => input).handler(handleMockQuery_createServerFn_handler, async ({ data }) => {
 	try {
-		const { getCategories, getItems, upsertCategory, deleteCategory, upsertItem, deleteItem, toggleItemAvailable } = await import("./local-db-CFlSiZE5.mjs");
+		const { getCategories, getItems, upsertCategory, deleteCategory, upsertItem, deleteItem, toggleItemAvailable } = await import("./local-db-Ccymnu-V-BlH359jS.mjs");
 		const { action, table, payload, eq } = data;
 		if (action === "select") {
 			if (table === "menu_categories") return {

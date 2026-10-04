@@ -1,4 +1,4 @@
-import { n as Socket, t as Presence } from "./supabase__phoenix.mjs";
+import { n as Socket, t as Presence } from "./phoenix-LZzTSlug.mjs";
 //#region node_modules/@supabase/realtime-js/dist/module/lib/websocket-factory.js
 /**
 * Utilities for creating WebSocket instances across runtimes.

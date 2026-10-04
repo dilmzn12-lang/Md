@@ -1,8 +1,8 @@
-import { t as FunctionsClient } from "./supabase__functions-js.mjs";
-import { t as PostgrestClient } from "./supabase__postgrest-js.mjs";
-import { t as RealtimeClient } from "./supabase__realtime-js.mjs";
-import { t as StorageClient } from "./@supabase/storage-js+[...].mjs";
-import { t as AuthClient } from "./supabase__auth-js.mjs";
+import { t as FunctionsClient } from "./functions-js-BrcG_IBD.mjs";
+import { t as PostgrestClient } from "./postgrest-js-DyRWhzwV.mjs";
+import { t as RealtimeClient } from "./realtime-js-DwH1F-jP.mjs";
+import { t as StorageClient } from "./storage-js-CV3fMpil.mjs";
+import { t as AuthClient } from "./auth-js-sqDQoEjA.mjs";
 //#region node_modules/@supabase/supabase-js/dist/tracingRegistry.mjs
 var EXTRACTOR_KEY = Symbol.for("@supabase/supabase-js.traceContextExtractor");
 /**
