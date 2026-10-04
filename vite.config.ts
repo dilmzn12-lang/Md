@@ -12,15 +12,7 @@ if (process.env.VERCEL) {
 
 export default defineConfig({
   nitro: {
-    rollupConfig: {
-      output: {
-        chunkFileNames: (chunkInfo) => {
-          const cleanName = chunkInfo.name.replace(/\+/g, "-");
-          return `_chunks/${cleanName}-[hash].mjs`;
-        },
-        entryFileNames: "[name].mjs",
-      }
-    }
+    inlineDynamicImports: true,
   },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
